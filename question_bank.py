@@ -22,7 +22,7 @@ class QuestionBank:
     # TODO: method - filter by topic (topic)
     # TODO: method - edit question (ques id)
     # TODO: method - filter by difficulty (difficulty)
-    # TODO: method - get random question (count of question/ num_questions)
+    # TODO: method - get_random_question (count of question/ num_questions)
     # TODO: method - load from file
     # TODO: method - save to file
 
