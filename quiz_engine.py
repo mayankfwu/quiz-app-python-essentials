@@ -1,7 +1,7 @@
 import time
 
 
-class quiz:
+class Quiz:
     def __init__(self, questions, time_limit):
         self.questions = questions
         self.time_limit = time_limit
