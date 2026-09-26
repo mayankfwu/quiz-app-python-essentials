@@ -30,6 +30,15 @@ def to_dict(self, text, option_chosen, correct_answer, topic, difficulty):
     }
 
 
+"""get question"""
+def get_question(self, question_id):
+    if question_id in self.questions:
+        return self.questions[question_id]
+    else:
+        print("Question not found")
+        return None
+
+
 class QuestionBank:
     def __init__(self):
         self.questions = {}
