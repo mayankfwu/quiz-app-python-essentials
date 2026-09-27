@@ -1,3 +1,6 @@
+from question_bank import Question
+
+
 class Scorer:
     def __init__(self,questions ,answers):
         self.questions = questions
@@ -12,7 +15,7 @@ class Scorer:
         for question in self.questions:
             if index not in self.answers:
                 self.unanswered += 1
-            elif question.correct_answer == self.answers[index]:
+            elif question.is_correct(self.answers[index]):
                 self.correct_count += 1
                 self.score += 1
             else:
