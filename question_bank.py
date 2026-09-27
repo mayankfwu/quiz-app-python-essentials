@@ -14,20 +14,20 @@ class Question:
         self.difficulty = difficulty
 
 
-"""checks if the answer chosen is correct or not"""
-def is_correct(self, option_chosen):
-    return option_chosen.lower() == self.correct_answer.lower()
+    """checks if the answer chosen is correct or not"""
+    def is_correct(self, option_chosen):
+        return option_chosen.lower() == self.correct_answer.lower()
 
 
-"""dictionary"""
-def to_dict(self, text, option_chosen, correct_answer, topic, difficulty):
-    return {
-        'text': self.text,
-        'options': self.options,
-        'correct_answer': self.correct_answer,
-        'topic': self.topic,
-        'difficulty': self.difficulty
-    }
+    """dictionary"""
+    def to_dict(self):
+        return {
+            'text': self.text,
+            'options': self.options,
+            'correct_answer': self.correct_answer,
+            'topic': self.topic,
+            'difficulty': self.difficulty
+        }
 
 
 class QuestionBank:

@@ -14,14 +14,15 @@ def run_quiz(quiz):
         print(current_question.options)
         option_chosen = input("enter option chosen:")
         quiz.record_answer(option_chosen)
-        quiz.go_to_question(quiz.current_index + 1)
+        if not quiz.end_quiz():
+            quiz.go_to_question(quiz.current_index + 1)
 
 def report(scorer):
     score, correct_count, incorrect_count, unanswered = scorer.get_report()
-    print(f"score: {score}"
-          f"correct_count: {correct_count}"
-          f"incorrect_count: {incorrect_count}"
-          f"unanswered: {unanswered}")
+    print(f"score: {score}\n"
+          f"correct_count: {correct_count}\n"
+          f"incorrect_count: {incorrect_count}\n"
+          f"unanswered: {unanswered}\n")
 
 
 def admin_menu(question_bank):
