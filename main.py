@@ -26,12 +26,12 @@ def report(scorer):
 
 def admin_menu(question_bank):
     while True:
-        admin_choice = int(input("please choose an option"
-                                 "press 1 to add questions"
-                                 "press 2 to edit questions"
-                                 "press 3 to delete questions"
-                                 "press 4 to view questions"
-                                 "press 5 to quit"))
+        admin_choice = int(input("press 1 to add questions\n"
+                                 "press 2 to edit questions\n"
+                                 "press 3 to delete questions\n"
+                                 "press 4 to view questions\n"
+                                 "press 5 to quit\n"
+                                 "please choose an option\n"))
 
 
 
@@ -119,11 +119,11 @@ def admin_menu(question_bank):
 
         elif admin_choice == 4:
             for question_id, question in question_bank.questions.items():
-                print(f"{question_id}: {question.text}"
-                      f"options: {question.options}"
-                      f"correct answer: {question.correct_answer}"
-                      f"topic: {question.topic}"
-                      f"difficulty: {question.difficulty}")
+                print(f"{question_id}: {question.text}\n"
+                      f"options: {question.options}\n"
+                      f"correct answer: {question.correct_answer}\n"
+                      f"topic: {question.topic}\n"
+                      f"difficulty: {question.difficulty}\n")
 
     #ends this branch and returns to main menu
         elif admin_choice == 5:
@@ -133,9 +133,9 @@ def admin_menu(question_bank):
 
 def student_menu(question_bank):
     while True:
-        student_choice = int(input("What would you like to do?"
-                                   "press 1 to take a test"
-                                   "press 2 to go back to main menu"))
+        student_choice = int(input("What would you like to do?\n"
+                                   "press 1 to take a test\n"
+                                   "press 2 to go back to main menu\n"))
         if student_choice == 1:
             quiz_topic = input("enter topic here (leave blank not filter by topic):")
             quiz_difficulty = input("enter difficulty here (leave blank not filter by difficulty):")
@@ -179,10 +179,11 @@ def student_menu(question_bank):
 #main menu
 def main_menu(question_bank):
     while True:
-        menu_choice = int(input("What would you like to do?"
-              "press 1 to get admin options"
-              "press 2 to get student options"
-              "press 3 to quit"))
+        menu_choice = int(input("What would you like to do?\n"
+              "press 1 to get admin options\n"
+              "press 2 to get student options\n"
+              "press 3 to quit\n"
+               "enter your choice:"))
 
         if menu_choice == 1:
             admin_menu(question_bank)
@@ -191,7 +192,7 @@ def main_menu(question_bank):
             student_menu(question_bank)
 
         elif menu_choice == 3:
-            print("goodbye"
+            print("goodbye\n"
                   "shutting down...")
             break
 
