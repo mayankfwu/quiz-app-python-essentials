@@ -1,5 +1,3 @@
-from question_bank import Question
-
 
 class Scorer:
     def __init__(self,questions ,answers):

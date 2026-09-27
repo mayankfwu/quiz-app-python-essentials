@@ -27,16 +27,16 @@ def report(scorer):
 
 def admin_menu(question_bank):
     while True:
-        admin_choice = int(input("press 1 to add questions\n"
+        admin_choice = input("press 1 to add questions\n"
                                  "press 2 to edit questions\n"
                                  "press 3 to delete questions\n"
                                  "press 4 to view questions\n"
                                  "press 5 to quit\n"
-                                 "please choose an option\n"))
+                                 "please choose an option\n")
 
 
 
-        if admin_choice == 1:
+        if admin_choice == "1":
     #takes in the inputs of new question
             text = input("enter the text of question here:")
             option1 = input("enter option1 here:")
@@ -62,7 +62,7 @@ def admin_menu(question_bank):
 
 
 
-        elif admin_choice == 2:
+        elif admin_choice == "2":
 
     #takes the ques id to edit as input cnd checks the inputs validity
             while True:
@@ -104,7 +104,7 @@ def admin_menu(question_bank):
             edited_question = Question(text, options, correct_answer, topic, difficulty)
             question_bank.edit_question(question_id_to_edit, edited_question)
 
-        elif admin_choice == 3:
+        elif admin_choice == "3":
     #takes question id
             while True:
                 question_id_to_delete = input("enter question id you want to delete here (format must be q1, q2, etc.):")
@@ -118,7 +118,7 @@ def admin_menu(question_bank):
             question_bank.delete_question(question_id_to_delete)
 
 
-        elif admin_choice == 4:
+        elif admin_choice == "4":
             for question_id, question in question_bank.questions.items():
                 print(f"{question_id}: {question.text}\n"
                       f"options: {question.options}\n"
@@ -127,17 +127,17 @@ def admin_menu(question_bank):
                       f"difficulty: {question.difficulty}\n")
 
     #ends this branch and returns to main menu
-        elif admin_choice == 5:
+        elif admin_choice == "5":
             print("returning to main menu")
             break
 
 
 def student_menu(question_bank):
     while True:
-        student_choice = int(input("What would you like to do?\n"
+        student_choice = input("What would you like to do?\n"
                                    "press 1 to take a test\n"
-                                   "press 2 to go back to main menu\n"))
-        if student_choice == 1:
+                                   "press 2 to go back to main menu\n")
+        if student_choice == "1":
             quiz_topic = input("enter topic here (leave blank not filter by topic):")
             quiz_difficulty = input("enter difficulty here (leave blank not filter by difficulty):")
 
@@ -169,7 +169,7 @@ def student_menu(question_bank):
             report(new_scorer)
 
 
-        elif student_choice == 2:
+        elif student_choice == "2":
             print("returning")
             break
 
@@ -180,19 +180,19 @@ def student_menu(question_bank):
 #main menu
 def main_menu(question_bank):
     while True:
-        menu_choice = int(input("What would you like to do?\n"
+        menu_choice = input("What would you like to do?\n"
               "press 1 to get admin options\n"
               "press 2 to get student options\n"
               "press 3 to quit\n"
-               "enter your choice:"))
+               "enter your choice:")
 
-        if menu_choice == 1:
+        if menu_choice == "1":
             admin_menu(question_bank)
 
-        elif menu_choice == 2:
+        elif menu_choice == "2":
             student_menu(question_bank)
 
-        elif menu_choice == 3:
+        elif menu_choice == "3":
             print("goodbye\n"
                   "shutting down...")
             break
