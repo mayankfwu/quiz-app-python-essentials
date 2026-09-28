@@ -41,7 +41,7 @@ For the student.
 
 ### Prerequisites ###
 
-- Python 3.10 or newer (download from https://www.python.org/downloads/)
+- Python 3.10 or newer
 - Git (optional, only needed to clone the repo)
 
 No external libraries are required. The project uses only Python's standard library.
