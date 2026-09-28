@@ -2,13 +2,13 @@
 
 
 
-\##Overview:-
+\##Overview:-##
 
 This program aims to be an easy and resource efficient app to make and attempt quiz/tests. Admin will be the one using the program to add/edit/delete/view questions to the question bank which will be used to create the quiz. The student can take test by entering the no. of questions and time limit of the test, the student can also filter the questions according to topics and difficulty which would be defined by the teacher while adding question. All questions are assigned a unique id to easily access them which can be seen by view function. Once the student finishes the test or the timer runs out a report will shown which will contain score, no of questions correctly answered, no of questions incorrectly answered and the no. of questions incorrectly answered.
 
 
 
-\##Features:-
+\##Features:-##
 
 This program offers different functionality according to the user.
 
@@ -54,7 +54,7 @@ For the student.
 
 
 
-\##Technologies and Tools used:-
+\##Technologies and Tools used:-##
 
 1. the code is written in python 3.14
 2. Git and Github
@@ -64,11 +64,11 @@ For the student.
 
 
 
-\##Steps to install \& run the project:-
+\##Steps to install \& run the project:-##
 
 
 
-\### Prerequisites
+\### Prerequisites ###
 
 \- Python 3.10 or newer (download from https://www.python.org/downloads/)
 
@@ -80,7 +80,7 @@ No external libraries are required. The project uses only Python's standard libr
 
 
 
-\### Steps
+\### Steps ###
 
 1\. Clone the repository:
 
@@ -98,7 +98,7 @@ No external libraries are required. The project uses only Python's standard libr
 
 
 
-\### First-time usage
+\### First-time usage ###
 
 The question bank starts empty each time the program runs, so:
 
