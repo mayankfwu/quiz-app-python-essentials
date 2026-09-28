@@ -2,7 +2,7 @@
 
 ## Overview:- ##
 
-This program aims to be an easy and resource efficient app to make and attempt quiz/tests. Admin will be the one using the program to add/edit/delete/view questions to the question bank which will be used to create the quiz. The student can take test by entering the no. of questions and time limit of the test, the student can also filter the questions according to topics and difficulty which would be defined by the teacher while adding question. All questions are assigned a unique id to easily access them which can be seen by view function. Once the student finishes the test or the timer runs out a report will shown which will contain score, no of questions correctly answered, no of questions incorrectly answered and the no. of questions incorrectly answered.
+This program aims to be an easy and resource efficient app to make and attempt quiz/tests. Admin will be the one using the program to add/edit/delete/view questions to the question bank which will be used to create the quiz. The student can take test by entering the no. of questions and time limit of the test, the student can also filter the questions according to topics and difficulty which would be defined by the teacher while adding question. All questions are assigned a unique id to easily access them which can be seen by view function. Once the student finishes the test or the timer runs out a report will shown which will contain score, no of questions correctly answered, no of questions incorrectly answered and the no. of questions unanswered.
 
 ## Features:- ##
 
@@ -20,15 +20,17 @@ For the admin/teacher,
 
 For the student.
 
-1. take a quiz for which the follow details will be asked
-	> no. of questions to be asked
-	> time limit of the test
-	> topics to filter the questions chosen (can be left blank to not filter by topic)
-	> difficulty to filter the questions (can be left blank to not filter by difficulty)
+1. take a quiz for which the following details will be asked
+- no. of questions to be asked
+- time limit of the test
+- topics to filter the questions chosen (can be left blank to not filter by topic)
+- difficulty to filter the questions (can be left blank to not filter by difficulty)
 
 2. the questions for the quiz will be chosen randomly
 
 3. the answers are checked ignoring the capitalization
+
+4. a score/report is shown showing no. of correct answers , wrong answers, and unanswered questions.
 
 ## Technologies and Tools used:- ##
 1. the code is written in python 3.14
@@ -64,3 +66,18 @@ The question bank starts empty each time the program runs, so:
 1. Choose **1** (Admin) from the main menu and add some questions.
 2. Choose **5** to go back to the main menu.
 3. Choose **2** (Student) and then **1** to take a test.
+
+## Project Structure
+(to be added)
+
+## How to Test
+Testing instructions will be added once the test suite is complete.
+
+## Screenshots
+(to be added)
+
+## Known Limitations
+- Questions are not saved between sessions (the question bank is empty each time the program starts)
+- Topic and difficulty filters are case-sensitive (`Geography` and `geography` are treated as different topics)
+- Entering non-numeric text for the number of questions or the time limit causes the program to crash
+- The time limit is checked after each answer, not continuously
