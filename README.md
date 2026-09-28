@@ -56,7 +56,6 @@ No external libraries are required. The project uses only Python's standard libr
 
 3. Run the application:
    python main.py
-   (On some systems, use `python3 main.py` instead.)
 
 ### First-time usage ###
 
