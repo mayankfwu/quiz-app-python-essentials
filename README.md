@@ -71,7 +71,7 @@ The question bank starts empty each time the program runs, so:
 (to be added)
 
 ## How to Test
-Testing instructions will be added once the test suite is complete.
+(to be added)
 
 ## Screenshots
 (to be added)
